@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workspaces</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <h1>Workspaces</h1>
+        <p class="subtitle">Selecione um ambiente para iniciar ou adicione um novo abaixo</p>
+      </div>
+    </header>
+
+    <section class="add-section">
+      <form id="workspace-form" class="workspace-form" autocomplete="off">
+        <input 
+          type="text" 
+          id="ws-name" 
+          placeholder="Nome do Workspace (ex: Trabalho, Estudos)" 
+          required 
+        />
+        <input 
+          type="url" 
+          id="ws-url" 
+          placeholder="Link de compartilhamento (https://...)" 
+          required 
+        />
+        <button type="submit" class="btn-add">Adicionar</button>
+      </form>
+    </section>
+
+    <section id="workspaces-grid" class="workspaces-grid" aria-label="Lista de Workspaces">
+      <!-- Cards inseridos via JavaScript -->
+    </section>
+
+    <div id="empty-state" class="empty-state" hidden>
+      <p>Nenhum Workspace cadastrado ainda.</p>
+      <span>Copie o link de compartilhamento de um Workspace do Edge e adicione acima.</span>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

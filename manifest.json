@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Edge Workspace Launcher",
+  "version": "1.0.0",
+  "description": "Substitui a Nova Guia por uma tela minimalista de seleção de Workspaces do Microsoft Edge.",
+  "permissions": [
+    "storage"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
